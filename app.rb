@@ -9,6 +9,7 @@ class App < Sinatra::Base
     post '/newteam' do
       # binding.pry
         @name = params[:name]
+        @coach =  params[:coach]
 
       erb :team
     end
